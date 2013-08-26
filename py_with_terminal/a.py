@@ -44,5 +44,6 @@ fo=raw_input("Enter a desired folder name-")
 os.system("mkdir %s" % fo)
 for x in a:
 	os.system("man %s> %s/%s.txt" % (x,fo,x))
+	print "%s command copied to %s/%s.txt.\n" % (x,fo,x)
 
 
