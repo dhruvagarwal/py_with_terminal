@@ -40,8 +40,9 @@ a=["pwd",
 "groupmod",
 "chgrp",
 "groupdel"]
-os.system("mkdir commands")
+fo=raw_input("Enter a desired folder name-")
+os.system("mkdir %s" % fo)
 for x in a:
-	os.system("man %s> commands/%s.txt" % (x,x))
+	os.system("man %s> %s/%s.txt" % (x,fo,x))
 
 
